@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste Salut!</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: #1b7fe3;
+        color: #000000;
+        font-family: "Roboto", sans-serif;
+      }
+      .full-height {
+        min-height: 100vh;
+      }
+
+      .w-90 {
+        width: 90vw;
+      }
+
+      .py-15 {
+        padding-top: 100px;
+      }
+
+      .border-radiu {
+        border-radius: 20px;
+      }
+
+      .custom-border-top {
+        border-top: 2px solid #000000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container full-height w-90 bg-light">
+      <div
+        class="pt-3 col-12 col-md-12 d-flex justify-content-center align-items-center"
+      >
+        <img class="img-fluid col-md-2" src="/image/escudo.png" alt="" />
+      </div>
+
+      <div class="py-15 pl-3">
+        <h2 class="text-primary font-weight-bold">Título da página</h2>
+        <p class="pt-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum in
+          repellat sit nostrum quo corrupti laboriosam totam quasi, cum officiis
+          fuga ad magnam earum repudiandae magni aliquam. Laboriosam, asperiores
+          accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Animi tempora voluptates sint molestias nostrum expedita error itaque
+          deleniti. Quis ab non obcaecati beatae nesciunt amet corporis, commodi
+          animi deleniti eius? Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Temporibus consequatur facere necessitatibus sunt
+          eligendi delectus corrupti cupiditate quidem, esse similique magnam
+          culpa incidunt non debitis numquam amet, dolore ipsam laudantium.
+        </p>
+      </div>
+
+      <div class="row pt-5 pl-3 justify-content-center align-items-center">
+        <div class="col-12 col-md-8">
+          <h4 class="text-primary font-weight-bold">Título seção</h4>
+          <p class="pt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+            voluptatum consectetur officia cum eaque, eius quasi alias quaerat
+            explicabo placeat beatae inventore aut fugit aliquid minus libero
+            tempora maxime similique. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Enim iure, asperiores architecto animi vitae
+            ratione, recusandae officiis quae esse aperiam mollitia impedit
+            perferendis pariatur aspernatur molestias. Ipsum odio veritatis
+            quibusdam! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Placeat ratione sequi sit consectetur sunt, adipisci soluta pariatur
+            deserunt amet iure consequatur dolore? Iste, dolor ratione! Natus
+            numquam perspiciatis sequi quidem. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Illum, beatae delectus. Repellat
+            dolores sapiente tempore dolor fuga officiis, hic nemo aliquid quam
+            inventore maiores sed voluptate magnam unde, rem quis.
+          </p>
+        </div>
+        <div class="col-12 col-md-4">
+          <img
+            class="img-fluid w-100 border-radiu"
+            src="/image/a-paisagem-bonita-do-sol-da-praia-com-um-barco_1112-212.jpg"
+            alt="Imagen_sol_da_praia"
+          />
+        </div>
+      </div>
+
+      <div
+        class="row pl-5 pb-4 pt-4 col-7 d-flex justify-content-center align-items-center"
+      >
+        <button
+          id="btn-continuar"
+          class="btn btn-danger col-md-4 font-weight-bold"
+        >
+          CONTINUAR
+        </button>
+      </div>
+
+      <div class="row pt-5 justify-content-center">
+        <div class="col-10 pb-5 custom-border-top"></div>
+        <div class="col-12 col-md-6">
+          <form id="formulario" class="mt-5 pb-5 font-weight-bold">
+            <p>Preencha seus dados a seguir para ser contatado</p>
+
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input
+                class="form-control border-dark"
+                type="text"
+                id="nome"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="sobrenome">Sobrenome</label>
+              <input
+                class="form-control border-dark"
+                type="text"
+                id="sobrenome"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input
+                class="form-control border-dark"
+                type="email"
+                id="email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input
+                class="form-control border-dark"
+                type="text"
+                id="telefone"
+                placeholder="(XX) XXXXX-XXXX"
+                required
+              />
+            </div>
+
+            <div
+              class="pt-3 pb-5 d-flex justify-content-center align-items-center"
+            >
+              <button
+                type="submit"
+                id="buttonSubmit"
+                class="btn btn-danger w-25 font-weight-bold"
+              >
+                ENVIAR
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
